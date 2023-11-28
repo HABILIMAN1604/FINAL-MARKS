@@ -1,0 +1,50 @@
+body {
+            font-family: Arial, sans-serif;
+           
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('blackboard-background.jpg'); /* Replace 'background-photo.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p#outputMessage {
+    margin-top: 10px;
+}
+
+p.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
