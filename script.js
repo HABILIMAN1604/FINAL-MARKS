@@ -16,10 +16,13 @@ function calculateScore() {
         var requiredScore = ((desiredScore - currentScore) / 40) * 100;
             requiredScore = Math.max(requiredScore, 0); // Ensure the required score is not negative
 
-        var outputMessage = `You must score at least ${requiredScore.toFixed(2)} over 100 in the final examination to achieve ${desiredScore}% total in your subject.`;
-
+        if (requiredScore > 100) {
+            outputMessageElement.innerHTML = `<p>Unfortunately, it's not possible to achieve ${desiredScore}% with your current performance. Aim for the best!</p>`;
+        } else {
+            var outputMessage = `You must score at least ${requiredScore.toFixed(2)} over 100 in the final examination to achieve ${desiredScore}% total in your subject.`;
             outputMessageElement.innerHTML = outputMessage;
-            }
+        }
+     }
 }
 
 
