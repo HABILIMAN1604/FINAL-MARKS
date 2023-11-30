@@ -1,16 +1,16 @@
 body {
-            font-family: Arial, sans-serif;
-           
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-image: url('blackboard-background.jpg'); /* Replace 'background-photo.jpg' with your image file */
-            background-size: cover;
-            background-position: center;
-            color: white;
-        }
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-image: url('blackboard-background.jpg'); /* Replace 'background-photo.jpg' with your image file */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
 form {
-    max-width: 400px;
+    max-width: 200px;
     margin: 0 auto;
 }
 
